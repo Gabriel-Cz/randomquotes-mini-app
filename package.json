@@ -1,0 +1,12 @@
+{
+  "name": "randomquotes-app",
+  "version": "1.0.0",
+  "description": "Mini app to get random quotes from an api. This was a challenge from a LAT comunnity. ",
+  "main": "index.js",
+  "scripts": {
+    "main": "index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel Cz",
+  "license": "ISC"
+}

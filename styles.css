@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+#mainContainer{
+    width: 80%;
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
+#searchBarSectionContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+#searchBar {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 80%;
+    margin-right: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.searchBarInput {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font: 600 20px 'Roboto', sans-serif;
+}
+
+.searchBarInput:focus {
+    outline: thin 1px #2770F1;
+}
+
+.searchIcon {
+    font-size: 36px;
+}
+
+#searchButtonWrapper {
+    width: 20%;
+    margin-left: 10px;
+} 
+
+#button-Search {
+    text-align: center;
+    background-color: #2770F1;
+    line-height: 18px;
+    color: white;
+    font: 500 18px 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    padding: 15px 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+}
+
+.button-RandomQuote {
+    padding: 15px 25px;
+    font: 600 20px 'Roboto', sans-serif;
+    color: #152B5A;
+    background: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    transition: ease-in-out 500ms;
+    border: none;
+    margin-top: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    outline: none;
+}
+
+.button-RandomQuote:active {
+    outline: none;
+}
+
+.button-RandomQuote:hover {
+    cursor: pointer;
+    transition: ease-in 500ms;
+    transform: scale(1.02);
+    box-shadow: 0px 7.5px 12.5px rgba(0, 0, 0, 0.25);
+}
+
+.randomIcon {
+    margin-left: 10px;
+    color: #152B5A;
+    font-size: 36px;
+    overflow: hidden;
+}
+
+.quotesContent {
+    margin-top: 100px;
+}
+
+#quotesContainer {
+    width: 80%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 25px;
+    row-gap: 25px;
+    background: #FFFFFF;
+    border-radius: 5px; 
+    padding: 20px 20px;
+    margin-top: 20px;
+}
+
+.theQuoteContainer {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    display: grid;
+    place-items: center;
+}
+
+.quoteAuthor {
+    text-align: center;
+    font: 33px 'Inter', sans-serif;
+    line-height: 33px;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin: 25px 10px 10px;
+}
+
+.quoteGenre {
+    font-display: auto;
+    text-align: center;
+    font: 600 16px 'Roboto', sans-serif;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    background-color: #5C97FF;
+    letter-spacing: 1.25px;
+    margin-top: 0px;
+    text-transform: capitalize;
+}
+
+.quoteText {
+    font: 700 20px 'Roboto', sans-serif;
+    text-align: center;
+    margin: 25px 50px;
+    color: #172E5F;
+}
+
+@media screen and (min-width: 1200px) {
+    #quotesContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #mainContainer {
+        max-width: 50%;
+    }
+    #quotesContainer {
+        max-width: 50%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1950px) {
+    #mainContainer {
+        max-width: 50%;
+    }
+    #quotesContainer {
+        max-width: 50%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #button-SearchQuote {
+        font-weight: 600;
+    }
+    .quoteGenre {
+        font-weight: bold;
+    }
+}
