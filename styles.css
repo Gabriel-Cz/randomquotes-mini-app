@@ -130,20 +130,19 @@ body {
     font: 33px 'Inter', sans-serif;
     line-height: 33px;
     font-weight: bold;
-    padding: 10px 30px;
-    margin: 25px 10px 10px;
+    margin: 25px 25px ;
+    margin-top: 35px;
 }
 
 .quoteGenre {
     font-display: auto;
     text-align: center;
-    font: 600 16px 'Roboto', sans-serif;
+    font: 600 14px 'Roboto', sans-serif;
     color: #ffffff;
     border-radius: 30px;
     padding: 10px 30px;
     background-color: #5C97FF;
     letter-spacing: 1.25px;
-    margin-top: 0px;
     text-transform: capitalize;
 }
 
@@ -152,6 +151,7 @@ body {
     text-align: center;
     margin: 25px 50px;
     color: #172E5F;
+    margin-bottom: 35px;
 }
 
 @media screen and (min-width: 1200px) {
